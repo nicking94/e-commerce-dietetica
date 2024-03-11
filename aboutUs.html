@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Assets/SVG/icon_logo.svg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7732b33911.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Nosotros</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+    <section id="home">
+      <header
+        class="fixed top-0 left-0 w-full bg-white shadow-lg z-10 flex justify-between items-center px-[24px] lg:px-[48px] py-[16px] lg:py-[24px] lg:gap-x-[107px]"
+      >
+        <div>
+          <img
+            src="Assets/SVG/icon_logo.svg"
+            alt="logo-image"
+            class="w-[52px] h-[52px] md:w-[76px] md:h-[76px]"
+          />
+        </div>
+        <div>
+          <nav
+            id="menu"
+            class="fixed top-0 left-0 w-full h-30vh z-20 md:static hidden md:block"
+          >
+            <ul
+              id="menu"
+              class="w-full h-full md:w-auto md:h-auto md:static bg-[#08F1DE] md:bg-white flex flex-col text-center md:flex-row gap-x-[20px] px-[16px] md:px-0 py-[30px] md:py-[16px] text-[20px] font-normal"
+            >
+              <li class="mb-2 md:mb-0">
+                <a href="index.html">Inicio</a>
+              </li>
+              <li
+                class="text-[#415B2C] font-semibold border-l-2 md:border-l-0 md:border-b-2 border-[#415B2C] mb-2 md:mb-0"
+              >
+                <a href="#">Nosotros</a>
+              </li>
+              <li class="mb-2 md:mb-0">
+                <a href="instructions.html">Instrucciones</a>
+              </li>
+              <li class="mb-2 md:mb-0"><a href="news.html">Noticias</a></li>
+              <li class="mb-2 md:mb-0"><a href="contact.html">Contacto</a></li>
+              <li class="invisible md:hidden lg:invisible -mb-8 md:mb-0">
+                Sucursales
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-center gap-x-8">
+          <div class="relative">
+            <div
+              class="absolute top-0 right-0 bg-red-500 text-white rounded-full w-6 text-center"
+              id="cart-notification"
+            ></div>
+            <img
+              id="carrito-icono"
+              src="Assets/SVG/u_shopping-bag.svg"
+              alt="shopping-bag-image"
+              class="w-12 h-12 md:w-16 md:h-16 cursor-pointer"
+              onclick="openCartModal()"
+            />
+          </div>
+          <img
+            src="Assets/SVG/fi_menu.svg"
+            alt="menu-image"
+            onclick="toggleMenu()"
+            class="relative w-[44px] h-[44px] z-20 md:hidden menu-toggler transition"
+          />
+        </div>
+      </header>
+    </section>
+
+    <main class="flex flex-col">
+      <div class="mt-20 md:mt-32 gap-y-[56px] px-8 md:px-20 py-[32px]">
+        <div class="bg-[#CC9A68] py-[10px] md:py-[24px] rounded-[10px]">
+          <h1
+            class="text-[20px] md:text-[24px] md:text-[32px] text-white font-semibold text-center"
+          >
+            Nosotros
+          </h1>
+        </div>
+        <div class="gap-y-[56px]">
+          <div>
+            <img
+              src="Assets/slide_home.svg"
+              alt="slide-image"
+              class="w-full py-4 md:py-10 md:px-20"
+            />
+          </div>
+          <div class="gap-y-[30px]">
+            <h2
+              class="text-[20px] md:text-[24px] text-center font-semibold mb-8"
+            >
+              Tienda saludable Diamante Natural: Nutriendo Vidas Desde 2018
+            </h2>
+
+            <p
+              class="text-[16px] md:text-[18px] leading-[22px] md:leading-[32px] text-pretty"
+            >
+              En el corazón de Wilde, Dietetica Diamante Natural cobró vida en
+              2018 gracias al esfuerzo conjunto de Rodrigo Ferrare y Sabrina
+              Gimenez. Con una visión compartida de brindar opciones saludables
+              a nuestra comunidad, dimos inicio a un negocio familiar que
+              trasciende las barreras de lo comercial. Somos más que una
+              dietética; somos un legado familiar donde la pasión por la salud y
+              el bienestar se refleja en cada interacción. Aquí, los miembros de
+              la familia de Rodrigo y Sabrina trabajan juntos para ofrecer una
+              experiencia auténtica y cercana a nuestros clientes. Durante más
+              de cinco años, hemos crecido y expandido nuestro alcance gracias
+              al apoyo inquebrantable de quienes confían en nosotros. Nuestros
+              servicios de envío ahora abarcan Avellaneda, Lanús y Quilmes,
+              llevando nuestra amplia variedad de productos directamente a tu
+              puerta. En Dietetica Diamante Natural, entendemos que cada persona
+              tiene necesidades únicas. Es por eso que nos enorgullecemos de
+              nuestra extensa gama de productos que atienden a necesidades
+              específicas, abarcando desde alimentos naturales hasta suplementos
+              y productos especializados. Nuestro compromiso es ir más allá de
+              la transacción comercial. Queremos ser tus aliados en tu viaje
+              hacia un estilo de vida más saludable. Aquí encontrarás no solo
+              productos, sino también el conocimiento y el apoyo necesarios para
+              tu bienestar integral. Únete a nosotros en esta aventura. Sé parte
+              de nuestra familia en Dietetica Diamante Natural, donde la salud y
+              el bienestar son nuestra prioridad número uno. ¡Gracias por
+              permitirnos ser parte de tu camino hacia una vida más saludable!
+            </p>
+          </div>
+          <div
+            class="bg-[#CC9A68] mt-12 md:gap-y-[10px] py-[10px] md:py-[24px] rounded-[10px]"
+          >
+            <h1
+              class="text-[20px] md:text-[32px] text-white font-semibold text-center"
+            >
+              Donde encontrarnos
+            </h1>
+          </div>
+          <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-2/5">
+              <p
+                class="text-[16px] md:text-[18px] leading-[22px] md:leading-[32px] text-pretty"
+              >
+                ¡Te damos la bienvenida a Diamante Natural, tu destino para una
+                vida saludable en Villa Domínico, Buenos Aires! Ubicada en la
+                <strong>AV BELGRANO 5412</strong>, nuestra dietética ofrece una
+                amplia gama de productos naturales y orgánicos para satisfacer
+                todas tus necesidades nutricionales. Desde superalimentos hasta
+                suplementos vitamínicos, encontrarás todo lo que necesitas para
+                llevar un estilo de vida saludable. ¡Visítanos en nuestra
+                dirección y comienza tu viaje hacia el bienestar hoy mismo!
+              </p>
+            </div>
+            <div class="md:w-3/5 -mt-10">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2399099771824!2d-58.330791725140905!3d-34.69912836254187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333d6d13d9407%3A0x370ddb285642a535!2sDiamante%20natural!5e0!3m2!1ses-419!2sar!4v1707336651190!5m2!1ses-419!2sar"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="mt-8 -mb-10 rounded-lg p-5"
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <h2
+              class="text-[20px] md:text-[24px] text-[#323533] font-semibold text-center mt-20 mb-4"
+            >
+              Obtén novedades
+            </h2>
+            <div
+              class="flex justify-center md:px-[56px] md:py-[42px] gap-x-[9px] md:gap-x-[56px]"
+            >
+              <input
+                type="text"
+                placeholder="Correo"
+                class="w-full gap-x-[1000px] px-[12px] py-10px text-[#CFCFCF] text-[16px] md:text-[18px] leading-[22px] md:leading-[32px] border-2 border-[#CFCFCF] rounded-[30px]"
+              />
+              <button
+                class="flex items-center justify-center bg-[#415B2C] w-[144px] h-[54px] rounded-full font-bold text-white"
+              >
+                <p class="text-[13px] md:text-[18px] bold md:p-4">SUSCRIBIR</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-screen">
+      <div class="bg-[#08F1DE] gap-y-[32px] px-[24px] py-[32px] w-full">
+        <h2 class="text-center text-[20px] text-[#323533] font-semibold mb-8">
+          Contacto
+        </h2>
+        <div class="gap-x-[96px] flex justify-center">
+          <a href="#">
+            <img src="Assets/SVG/u_instagram-alt.svg" alt="instagram-image" />
+          </a>
+          <a href="#">
+            <img src="Assets/SVG/u_youtube.svg" alt="youtube-image" />
+          </a>
+          <a href="#">
+            <img src="Assets/SVG/u_facebook.svg" alt="facebook-image" />
+          </a>
+        </div>
+        <h2
+          class="text-center text-[20px] text-[#323533] font-semibold mt-8 mb-8"
+        >
+          Mapa de sitio
+        </h2>
+        <nav class="px-[56px]">
+          <ul class="list-disc text-[#323533]">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li>
+              <a href="instructions.html">Instrucciones</a
+              >
+            </li>
+            <li><a href="news.html">Noticias</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <p class="text-[16px] text-[#323533] leading-[22px] text-center mt-8">
+          Todos los derechos están reservados
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal carrito -->
+    <div
+      id="cartModal"
+      class="modal-content hidden fixed -top-1 z-10 inset-0 bg-gray-800 bg-opacity-50 flex overflow-y-auto justify-end items-start"
+    >
+      <div
+        class="bg-white gap-y-[24px] rounded-lg relative flex flex-col justify-center w-full md:w-1/2"
+      >
+        <div class="w-full items-center flex px-[56px] py-[20px]">
+          <div class="w-full flex items-center md:gap-x-[16px]">
+            <img
+              src="Assets/SVG/u_angle-left-b.svg"
+              alt=""
+              class="h-[44px] w-[44px]"
+              onclick="goBack('modal-content')"
+            />
+            <h2
+              id="tituloModal"
+              class="text-[#323533] text-[20px] md:text-[24px] font-semibold"
+            >
+              Mi carrito
+            </h2>
+          </div>
+          <div class="flex items-center justify-center w-1/5">
+            <img
+              src="Assets/SVG/fi_x.svg"
+              onclick="closeModal()"
+              class="items-center text-gray-600 cursor-pointer w-[44px] h-[44px]"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full text-center"
+          id="articulosTitulo"
+          style="display: none"
+        >
+          <h2
+            class="text-[20px] md:text-[24px] text-[#323533] text-center font-semibold"
+          >
+            Artículos
+          </h2>
+        </div>
+        <!--contenedor de productos del carrito-->
+        <div class="w-full flex items-center md:p-2">
+          <div id="modal-content" class="flex flex-col w-full"></div>
+        </div>
+        <div
+          class="w-full flex gap-x-[64px] px-[16px] py-[10px]"
+          id="costoTotalDiv"
+          style="display: none"
+        >
+          <div class="flex flex-row">
+            <h2
+              class="flex items-center w-1/3 md:w-1/4 text-start text-[#323533] text-[20px] md:text-[24px] font-semibold mb-2"
+            >
+              Costo Total:
+            </h2>
+            <h2
+              class="w-1/4 text-start text-[#415B2C] text-[20px] md:text-[24px] text-center font-semibold"
+              id="costoTotal"
+            >
+              $0
+            </h2>
+          </div>
+          <div
+            id="ocultarCart"
+            class="bg-[#EDEDED] w-full flex flex-col items-center gap-y-[52px] md:px-[32px] py-[32px] md:rounded-[20px]"
+          >
+            <h2
+              class="text-[#323533] text-[20px] md:text-[24px] text-center font-semibold mb-4"
+            >
+              Tipo de envío
+            </h2>
+            <div
+              class="w-full flex md:flex-col justify-center items-center px-[10px] gap-x-2"
+            >
+              <button
+                class="bg-white text-center rounded-[30px] gap-x[10px] md:gap-x-[12px] px-[10px] py-[10px] md:py-[16px] md:mb-4"
+                onclick="openCartModal('delivery-data-modal')"
+              >
+                <a
+                  href="#"
+                  id="delivery-link"
+                  class="flex items-center gap-x-[10px] md:px-2"
+                >
+                  <i class="text-[#323533] fa-solid fa-truck"></i>
+                  <p class="text-[#323533] text-[18px] font-bold">Delivery</p>
+                </a>
+              </button>
+              <button
+                class="bg-white text-center rounded-[30px] gap-x[10px] md:gap-x-[12px] px-[10px] py-[10px] md:py-[16px] md:mb-4"
+                onclick="openCartModal('local-data-modal')"
+              >
+                <a
+                  href="#"
+                  id="local-link"
+                  class="flex items-center text-center gap-x-[10px] md:px-2"
+                >
+                  <i class="text-[#323533] fa-regular fa-building"></i>
+                  <p class="text-[#323533] text-[18px] font-bold">
+                    Retiro en local
+                  </p>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal delivery-data-->
+    <div id="delivery-data-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <form
+          class="gap-y-[32px] md:px-[56px] py-[32px]"
+          onsubmit="return validarFormularioDataDelivery()"
+        >
+          <div class="flex justify-end">
+            <i class="fa-solid fa-trash text-[#323533] w-[32px] h-[32px]"></i>
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Nombre
+            </h3>
+            <input
+              id="name"
+              type="text"
+              name="nombre"
+              placeholder="Por favor, escriba su nombre"
+              required
+              pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+"
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Correo electrónico
+            </h3>
+            <input
+              id="email"
+              type="email"
+              name="correo"
+              placeholder="Por favor, escriba su correo"
+              required
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <label
+              for="telefono"
+              class="text-[15px] md:text-[20px] text-[#323533] font-semibold"
+              >Teléfono:</label
+            >
+            <div class="flex">
+              <select
+                id="areaCode"
+                name="codigo_area"
+                class="border-2 border-gray-400 rounded-md mr-1"
+                onchange="obtenerInputs()"
+              >
+                <option value="54">AR</option>
+                <option value="52">MXC</option>
+                <option value="56">CHL</option>
+              </select>
+              <input
+                id="delivery-data-phone"
+                type="text"
+                name="telefono"
+                placeholder="+54 9 11 2222 2222"
+                oninput="obtenerInputPhone()"
+                class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+              />
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-8">
+            <a
+              href="#"
+              class="text-[#415B2C] gap-x-[10px] px-[16px] py-[10px] text-[18px] font-bold"
+              onclick="goBack('delivery-data-modal')"
+              >Atras</a
+            >
+            <button
+              type="submit"
+              class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            >
+              <p class="text-[18px] text-white font-bold">Continuar</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!------------------>
+
+    <!-----Modal delivery direction------>
+    <div id="delivery-direction-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <form
+          class="gap-y-[32px] md:px-[56px] py-[32px]"
+          onsubmit="return validarFormularioDireccion()"
+        >
+          <div class="flex justify-end">
+            <i class="fa-solid fa-trash text-[#323533] w-[32px] h-[32px]"></i>
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Barrio
+            </h3>
+            <input
+              id="neighborhood"
+              type="text"
+              name="barrio"
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Calle
+            </h3>
+            <input
+              id="street"
+              type="text"
+              name="calle"
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Altura
+            </h3>
+            <input
+              id="altura"
+              type="text"
+              name="altura"
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Referencia (Opcional)
+            </h3>
+            <input
+              id="reference"
+              type="text"
+              name="referencia"
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div class="flex justify-center items-center"></div>
+          <div class="flex justify-center items-center mt-8">
+            <a
+              href="#"
+              class="text-[#415B2C] gap-x-[10px] px-[16px] py-[10px] text-[18px] font-bold"
+              onclick="goBack('delivery-direction-modal')"
+              >Atras</a
+            >
+            <button
+              type="submit"
+              class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            >
+              <p class="text-[18px] text-white font-bold">Continuar</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!---------------------->
+
+    <!-----Modal products delivery------>
+    <div id="delivery-products-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <!--contenedor de pedidos-->
+        <div
+          class="delivery-products-selected bg-[#EDEDED] flex flex-col overflow-y-auto items-start gap-y-[16px] px-[24px] py-[24px] rounded-[20px] mb-8 mt-8"
+        ></div>
+        <!--fin contenedor de pedidos-->
+
+        <div class="flex justify-center items-center">
+          <a
+            href="#"
+            class="text-[#415B2C] gap-x-[10px] px-[16px] py-[10px] text-[18px] font-bold"
+            onclick="goBack('delivery-products-modal')"
+            >Atras</a
+          >
+          <button
+            class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            onclick="openCartModal('delivery-successful-modal')"
+          >
+            <p class="text-[18px] text-white font-bold">Continuar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!---------------------->
+
+    <!-----Modal successful delivery------>
+    <div id="delivery-successful-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        -
+        <!--contenedor-->
+        <img
+          src="Assets/web/wepi/ilustración_whatsapp.webp"
+          alt="ilustration-image"
+          class="w-1/2 mx-auto"
+        />
+        <h3 class="text-[20px] text-center text-pretty">
+          Ya casi terminamos, envía la confirmación via
+          <strong>Whatsapp</strong> y un representante te atenderá de manera
+          personal.
+        </h3>
+        <!--------------->
+
+        <div class="flex justify-center items-center mt-2">
+          <button
+            class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            onclick="openCartModal('cartModal')"
+          >
+            <p class="text-[18px] text-white font-bold">Enviar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!---------------------->
+
+    <!------------------------------------------------------------------------------------------------------->
+
+    <!-----Modal data retiro en Local------>
+    <div id="local-data-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <form
+          class="gap-y-[32px] md:px-[56px] py-[32px]"
+          onsubmit="return validarFormularioDataLocal()"
+        >
+          <div class="flex justify-end">
+            <i class="fa-solid fa-trash text-[#323533] w-[32px] h-[32px]"></i>
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Nombre
+            </h3>
+            <input
+              id="name"
+              type="text"
+              name="nombre"
+              placeholder="Por favor, escriba su nombre"
+              required
+              pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+"
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <h3 class="text-[15px] md:text-[20px] text-[#323533] font-semibold">
+              Correo electrónico
+            </h3>
+            <input
+              id="email"
+              type="email"
+              name="correo"
+              placeholder="Por favor, escriba su correo"
+              required
+              oninput="obtenerInputs()"
+              class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+            />
+          </div>
+          <div>
+            <label
+              for="telefono"
+              class="text-[15px] md:text-[20px]text-[#323533] font-semibold"
+              >Teléfono:</label
+            >
+            <div class="flex">
+              <select
+                id="areaCode"
+                name="codigo_area"
+                class="border-2 border-gray-400 rounded-md mr-1"
+                onchange="obtenerInputs()"
+              >
+                <option value="54">AR</option>
+                <option value="52">MXC</option>
+                <option value="56">CHL</option>
+              </select>
+              <input
+                id="local-data-phone"
+                type="text"
+                name="telefono"
+                placeholder="+54 9 11 2222 2222"
+                pattern="[0-9+\s]+"
+                oninput="obtenerInputs()"
+                class="w-full gap-x-[8px] px-[14px] py-[10px] rounded-[8px] border-2"
+              />
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-8">
+            <a
+              href="#"
+              class="text-[#415B2C] gap-x-[10px] px-[16px] py-[10px] text-[18px] font-bold"
+              onclick="goBack('local-data-modal')"
+              >Atras</a
+            >
+            <button
+              type="submit"
+              class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            >
+              <p class="text-[18px] text-white font-bold">Continuar</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!---------------------->
+
+    <!-----Modal products local------>
+    <div id="local-products-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+          <div class="w-[60px] border-t-2 mt-4"></div>
+          <div
+            class="bg-gray-400 text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <!--contenedor de pedidos-->
+        <div
+          class="local-products-selected bg-[#EDEDED] flex flex-col overflow-y-auto items-start gap-y-[16px] px-[24px] py-[24px] rounded-[20px] mb-8 mt-8"
+        ></div>
+        <!--fin contenedor de pedidos-->
+
+        <div class="flex justify-center items-center">
+          <a
+            href="#"
+            class="text-[#415B2C] gap-x-[10px] px-[16px] py-[10px] text-[18px] font-bold"
+            onclick="goBack('local-products-modal')"
+            >Atras</a
+          >
+          <button
+            class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            onclick="openCartModal('local-successful-modal')"
+          >
+            <p class="text-[18px] text-white font-bold">Continuar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!---------------------->
+
+    <!-----Modal successful delivery------>
+    <div id="local-successful-modal" class="modal-content hidden">
+      <div class="flex flex-col gap-x-[6px] px-[24px] py-[32px]">
+        <div class="flex justify-center w-full">
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <span>&#10003;</span>
+          </div>
+          <div class="w-[60px] border-t-2 border-[#415B2C] mt-4"></div>
+          <div
+            class="bg-[#415B2C] text-white w-[30px] h-[30px] rounded-full flex justify-center items-center"
+          >
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <!--contenedor-->
+        <img
+          src="Assets/web/wepi/ilustración_whatsapp.webp"
+          alt="ilustration-image"
+          class="w-1/2 mx-auto"
+        />
+        <h3 class="text-[20px] text-center text-pretty">
+          Ya casi terminamos, envía la confirmación via
+          <strong>Whatsapp</strong> y un representante te atenderá de manera
+          personal.
+        </h3>
+        <!--------------->
+
+        <div class="flex justify-center items-center mt-2">
+          <button
+            class="bg-[#415B2C] rounded-[20px] gap-x-[10px] px-[24px] py-[16px]"
+            onclick="openCartModal('cartModal')"
+          >
+            <p class="text-[18px] text-white font-bold">Enviar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!---------------------->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
